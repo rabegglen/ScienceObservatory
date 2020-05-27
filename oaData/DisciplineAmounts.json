@@ -1,0 +1,638 @@
+[
+  {
+    "Discipline_Name": "Accidents",
+    "amountPerDisc": 3973935
+  },
+  {
+    "Discipline_Name": "Addictive Diseases",
+    "amountPerDisc": 16597594
+  },
+  {
+    "Discipline_Name": "Agricultural and Forestry Sciences",
+    "amountPerDisc": 127861362.93
+  },
+  {
+    "Discipline_Name": "Agricultural Engineering",
+    "amountPerDisc": 73231979.27
+  },
+  {
+    "Discipline_Name": "Ancient history and Classical studies",
+    "amountPerDisc": 242391692.44
+  },
+  {
+    "Discipline_Name": "Animal Breeding",
+    "amountPerDisc": 50690342
+  },
+  {
+    "Discipline_Name": "Anthropology, Primatology",
+    "amountPerDisc": 106265925
+  },
+  {
+    "Discipline_Name": "Applied linguistics",
+    "amountPerDisc": 53596212.7
+  },
+  {
+    "Discipline_Name": "Applied psychology",
+    "amountPerDisc": 16705275
+  },
+  {
+    "Discipline_Name": "Archaeology",
+    "amountPerDisc": 396479416.13
+  },
+  {
+    "Discipline_Name": "Architecture and Social urban science",
+    "amountPerDisc": 405038805.85
+  },
+  {
+    "Discipline_Name": "Arts",
+    "amountPerDisc": 194133051.59
+  },
+  {
+    "Discipline_Name": "Astronomy, Astrophysics and Space Sciences",
+    "amountPerDisc": 3151273143.87
+  },
+  {
+    "Discipline_Name": "Basic Biological Research",
+    "amountPerDisc": 1319159
+  },
+  {
+    "Discipline_Name": "Basic Medical Sciences",
+    "amountPerDisc": 105000
+  },
+  {
+    "Discipline_Name": "Biochemistry",
+    "amountPerDisc": 1513586638.09
+  },
+  {
+    "Discipline_Name": "Biology and Medicine",
+    "amountPerDisc": 17105258.75
+  },
+  {
+    "Discipline_Name": "Biomedical Engineering",
+    "amountPerDisc": 263399922.01
+  },
+  {
+    "Discipline_Name": "Biophysics",
+    "amountPerDisc": 519721439.57
+  },
+  {
+    "Discipline_Name": "Botany",
+    "amountPerDisc": 508913479.54
+  },
+  {
+    "Discipline_Name": "Cancer",
+    "amountPerDisc": 52246217.42
+  },
+  {
+    "Discipline_Name": "Cardiovascular Diseases",
+    "amountPerDisc": 59618269
+  },
+  {
+    "Discipline_Name": "Cardiovascular Research",
+    "amountPerDisc": 589820017.65
+  },
+  {
+    "Discipline_Name": "Cellular Biology, Cytology",
+    "amountPerDisc": 1315983327.07
+  },
+  {
+    "Discipline_Name": "Chemical Engineering",
+    "amountPerDisc": 289282956.86
+  },
+  {
+    "Discipline_Name": "Chemistry",
+    "amountPerDisc": 8143499.2
+  },
+  {
+    "Discipline_Name": "Civil Engineering",
+    "amountPerDisc": 312942472.06
+  },
+  {
+    "Discipline_Name": "Climatology. Atmospherical Chemistry, Aeronomy",
+    "amountPerDisc": 970010385
+  },
+  {
+    "Discipline_Name": "Clinical Cancer Research",
+    "amountPerDisc": 105371335
+  },
+  {
+    "Discipline_Name": "Clinical Cardiovascular Research",
+    "amountPerDisc": 299946165
+  },
+  {
+    "Discipline_Name": "Clinical Endocrinology",
+    "amountPerDisc": 236941430.32
+  },
+  {
+    "Discipline_Name": "Clinical Immunology and Immunopathology",
+    "amountPerDisc": 240570074
+  },
+  {
+    "Discipline_Name": "Clinical Medicine",
+    "amountPerDisc": 1391550
+  },
+  {
+    "Discipline_Name": "Clinical Nutritional Research",
+    "amountPerDisc": 89026283
+  },
+  {
+    "Discipline_Name": "Clinical Pathophysiology",
+    "amountPerDisc": 139067552
+  },
+  {
+    "Discipline_Name": "Clinical Pharmacology",
+    "amountPerDisc": 125315713.95
+  },
+  {
+    "Discipline_Name": "Communication sciences",
+    "amountPerDisc": 232379080.14
+  },
+  {
+    "Discipline_Name": "Condensed Matter Physics",
+    "amountPerDisc": 2478999271.35
+  },
+  {
+    "Discipline_Name": "Congenital Disorders",
+    "amountPerDisc": 17161037
+  },
+  {
+    "Discipline_Name": "Dentistry",
+    "amountPerDisc": 23601846
+  },
+  {
+    "Discipline_Name": "Dermatology",
+    "amountPerDisc": 131554312
+  },
+  {
+    "Discipline_Name": "Dietetics",
+    "amountPerDisc": 3077096
+  },
+  {
+    "Discipline_Name": "Diseases of Bones and Joints",
+    "amountPerDisc": 34544128.45
+  },
+  {
+    "Discipline_Name": "Earth Sciences",
+    "amountPerDisc": 401550
+  },
+  {
+    "Discipline_Name": "Ecclesiastical history",
+    "amountPerDisc": 78636798.05
+  },
+  {
+    "Discipline_Name": "Ecology",
+    "amountPerDisc": 1577409862.35
+  },
+  {
+    "Discipline_Name": "Economics",
+    "amountPerDisc": 816668431.66
+  },
+  {
+    "Discipline_Name": "Educational science and Pedagogy",
+    "amountPerDisc": 588946698.48
+  },
+  {
+    "Discipline_Name": "Electrical Engineering",
+    "amountPerDisc": 567008263.14
+  },
+  {
+    "Discipline_Name": "Embryology, Developmental Biology",
+    "amountPerDisc": 904286514.55
+  },
+  {
+    "Discipline_Name": "Endocrinology",
+    "amountPerDisc": 296107538.97
+  },
+  {
+    "Discipline_Name": "Engineering Sciences",
+    "amountPerDisc": 2150437
+  },
+  {
+    "Discipline_Name": "Environmental Research",
+    "amountPerDisc": 155120098.1
+  },
+  {
+    "Discipline_Name": "Environmental Sciences",
+    "amountPerDisc": 10057530.5
+  },
+  {
+    "Discipline_Name": "Environmental Toxicology",
+    "amountPerDisc": 25467534
+  },
+  {
+    "Discipline_Name": "Ethnology",
+    "amountPerDisc": 509175045.83
+  },
+  {
+    "Discipline_Name": "Ethology",
+    "amountPerDisc": 22363618
+  },
+  {
+    "Discipline_Name": "Experimental Cancer Research",
+    "amountPerDisc": 913977033.99
+  },
+  {
+    "Discipline_Name": "Experimental Medicine",
+    "amountPerDisc": 5997737.05
+  },
+  {
+    "Discipline_Name": "Experimental Microbiology",
+    "amountPerDisc": 846924072.19
+  },
+  {
+    "Discipline_Name": "Fluid Dynamics",
+    "amountPerDisc": 169666788.2
+  },
+  {
+    "Discipline_Name": "Forest Engineering",
+    "amountPerDisc": 3991062
+  },
+  {
+    "Discipline_Name": "General Biology",
+    "amountPerDisc": 643848
+  },
+  {
+    "Discipline_Name": "General history (without pre-and early history)",
+    "amountPerDisc": 1621917053.38
+  },
+  {
+    "Discipline_Name": "Genetics",
+    "amountPerDisc": 1284225774.52
+  },
+  {
+    "Discipline_Name": "Geochemistry",
+    "amountPerDisc": 383150090.45
+  },
+  {
+    "Discipline_Name": "Geochronology",
+    "amountPerDisc": 58141308
+  },
+  {
+    "Discipline_Name": "Geology",
+    "amountPerDisc": 674531540.12
+  },
+  {
+    "Discipline_Name": "Geomorphology",
+    "amountPerDisc": 69211544
+  },
+  {
+    "Discipline_Name": "Geophysics",
+    "amountPerDisc": 269802518.28
+  },
+  {
+    "Discipline_Name": "Geriatrics",
+    "amountPerDisc": 15271839
+  },
+  {
+    "Discipline_Name": "German and English languages and literature",
+    "amountPerDisc": 970264383.64
+  },
+  {
+    "Discipline_Name": "Group Medicine",
+    "amountPerDisc": 1118227
+  },
+  {
+    "Discipline_Name": "Gynaecology",
+    "amountPerDisc": 26368927.45
+  },
+  {
+    "Discipline_Name": "Health",
+    "amountPerDisc": 40886133
+  },
+  {
+    "Discipline_Name": "Health Education",
+    "amountPerDisc": 37749761
+  },
+  {
+    "Discipline_Name": "Human Ecology",
+    "amountPerDisc": 7853153
+  },
+  {
+    "Discipline_Name": "Humanities and Social Sciences",
+    "amountPerDisc": 47802256.96
+  },
+  {
+    "Discipline_Name": "Hydrology, Limnology, Glaciology",
+    "amountPerDisc": 460238240.52
+  },
+  {
+    "Discipline_Name": "Immunology, Immunopathology",
+    "amountPerDisc": 1928597039.86
+  },
+  {
+    "Discipline_Name": "Infectious Diseases",
+    "amountPerDisc": 236465822.26
+  },
+  {
+    "Discipline_Name": "Information Technology",
+    "amountPerDisc": 2448128098.76
+  },
+  {
+    "Discipline_Name": "Inorganic Chemistry",
+    "amountPerDisc": 1204644877.21
+  },
+  {
+    "Discipline_Name": "Interdisciplinary",
+    "amountPerDisc": 564956999
+  },
+  {
+    "Discipline_Name": "Internal Medicine",
+    "amountPerDisc": 467551345.77
+  },
+  {
+    "Discipline_Name": "Legal sciences",
+    "amountPerDisc": 852423762.73
+  },
+  {
+    "Discipline_Name": "Linguistics and literature, philosophy",
+    "amountPerDisc": 200832
+  },
+  {
+    "Discipline_Name": "Material Sciences",
+    "amountPerDisc": 1116278381.17
+  },
+  {
+    "Discipline_Name": "Mathematics",
+    "amountPerDisc": 1864637696.97
+  },
+  {
+    "Discipline_Name": "Mathematics, Natural- and Engineering Sciences",
+    "amountPerDisc": 1601476
+  },
+  {
+    "Discipline_Name": "Mechanical Engineering",
+    "amountPerDisc": 296922652.85
+  },
+  {
+    "Discipline_Name": "Medical Microbiology",
+    "amountPerDisc": 369101709.32
+  },
+  {
+    "Discipline_Name": "Medical Statistics",
+    "amountPerDisc": 24322417
+  },
+  {
+    "Discipline_Name": "Medico-Social Problems of the Elderly",
+    "amountPerDisc": 14304679
+  },
+  {
+    "Discipline_Name": "Medico-Social Problems of Youth",
+    "amountPerDisc": 1849407
+  },
+  {
+    "Discipline_Name": "Mental Disorders, Psychosomatic Diseases",
+    "amountPerDisc": 48457393
+  },
+  {
+    "Discipline_Name": "Metabolic Disorders",
+    "amountPerDisc": 42611733
+  },
+  {
+    "Discipline_Name": "Meteorology",
+    "amountPerDisc": 52448145.65
+  },
+  {
+    "Discipline_Name": "Methods of Epidemiology and Preventive Medicine",
+    "amountPerDisc": 374922036.59
+  },
+  {
+    "Discipline_Name": "Microelectronics. Optoelectronics",
+    "amountPerDisc": 529049310.07
+  },
+  {
+    "Discipline_Name": "Mineralogy",
+    "amountPerDisc": 57003085.13
+  },
+  {
+    "Discipline_Name": "Molecular Biology",
+    "amountPerDisc": 1911983260.33
+  },
+  {
+    "Discipline_Name": "Music, Theatre",
+    "amountPerDisc": 154527253.92
+  },
+  {
+    "Discipline_Name": "Musicology",
+    "amountPerDisc": 176091345.4
+  },
+  {
+    "Discipline_Name": "Neurology, Psychiatry",
+    "amountPerDisc": 831902144.4
+  },
+  {
+    "Discipline_Name": "Neurophysiology and Brain Research",
+    "amountPerDisc": 2314393038.48
+  },
+  {
+    "Discipline_Name": "non-classifiable",
+    "amountPerDisc": 4467256
+  },
+  {
+    "Discipline_Name": "Nuclear Physics",
+    "amountPerDisc": 222069736.8
+  },
+  {
+    "Discipline_Name": "Nutritional Research, Vitaminology",
+    "amountPerDisc": 20504770
+  },
+  {
+    "Discipline_Name": "Occupational Medicine, Ergonomy",
+    "amountPerDisc": 15792923
+  },
+  {
+    "Discipline_Name": "Oceanography",
+    "amountPerDisc": 71126276
+  },
+  {
+    "Discipline_Name": "Ophthalmology",
+    "amountPerDisc": 51551315
+  },
+  {
+    "Discipline_Name": "Oral Preventive Medicine",
+    "amountPerDisc": 693823
+  },
+  {
+    "Discipline_Name": "Organic Chemistry",
+    "amountPerDisc": 1477154893.81
+  },
+  {
+    "Discipline_Name": "Other disciplines of Earth Sciences",
+    "amountPerDisc": 155251197
+  },
+  {
+    "Discipline_Name": "Other disciplines of Engineering Sciences",
+    "amountPerDisc": 757056340.89
+  },
+  {
+    "Discipline_Name": "Other disciplines of Environmental Sciences",
+    "amountPerDisc": 1122731121.19
+  },
+  {
+    "Discipline_Name": "Other disciplines of Physics",
+    "amountPerDisc": 1262885293.86
+  },
+  {
+    "Discipline_Name": "Other languages and literature",
+    "amountPerDisc": 477321619.29
+  },
+  {
+    "Discipline_Name": "Otorhinolaryngology",
+    "amountPerDisc": 25442017
+  },
+  {
+    "Discipline_Name": "Paediatrics",
+    "amountPerDisc": 266515913.73
+  },
+  {
+    "Discipline_Name": "Palaeontology",
+    "amountPerDisc": 112826351.57
+  },
+  {
+    "Discipline_Name": "Paleontology (biol.)",
+    "amountPerDisc": 60493773
+  },
+  {
+    "Discipline_Name": "Particle Physics",
+    "amountPerDisc": 4477786815.8
+  },
+  {
+    "Discipline_Name": "Pathophysiology",
+    "amountPerDisc": 555629110.8
+  },
+  {
+    "Discipline_Name": "Pedology",
+    "amountPerDisc": 103790514.6
+  },
+  {
+    "Discipline_Name": "Pharmacology, Pharmacy",
+    "amountPerDisc": 251577130.65
+  },
+  {
+    "Discipline_Name": "Philosophy",
+    "amountPerDisc": 881419757.51
+  },
+  {
+    "Discipline_Name": "Physical Chemistry",
+    "amountPerDisc": 2156249303.89
+  },
+  {
+    "Discipline_Name": "Physics",
+    "amountPerDisc": 5462256
+  },
+  {
+    "Discipline_Name": "Physiology : other topics",
+    "amountPerDisc": 614855885.6
+  },
+  {
+    "Discipline_Name": "Plasma Physics",
+    "amountPerDisc": 1039469233
+  },
+  {
+    "Discipline_Name": "Political science",
+    "amountPerDisc": 715073515.85
+  },
+  {
+    "Discipline_Name": "Prehistory",
+    "amountPerDisc": 121351457.55
+  },
+  {
+    "Discipline_Name": "Preventive Medicine (Epidemiology/Early Diagnosis/Prevention)",
+    "amountPerDisc": 2299379
+  },
+  {
+    "Discipline_Name": "Psychology",
+    "amountPerDisc": 1890951492.63
+  },
+  {
+    "Discipline_Name": "Public Health and Health Services",
+    "amountPerDisc": 248541760.07
+  },
+  {
+    "Discipline_Name": "Radiobiology",
+    "amountPerDisc": 9621881
+  },
+  {
+    "Discipline_Name": "Rehabilitation",
+    "amountPerDisc": 13508283
+  },
+  {
+    "Discipline_Name": "Religious studies, Theology",
+    "amountPerDisc": 336518156.47
+  },
+  {
+    "Discipline_Name": "Respiratory Diseases",
+    "amountPerDisc": 57221395
+  },
+  {
+    "Discipline_Name": "Romance languages and literature",
+    "amountPerDisc": 1218093064.97
+  },
+  {
+    "Discipline_Name": "Science of management",
+    "amountPerDisc": 225957938.51
+  },
+  {
+    "Discipline_Name": "Social geography and ecology",
+    "amountPerDisc": 524486159.67
+  },
+  {
+    "Discipline_Name": "Social Medicine",
+    "amountPerDisc": 1529403
+  },
+  {
+    "Discipline_Name": "Social Paediatrics",
+    "amountPerDisc": 15414737
+  },
+  {
+    "Discipline_Name": "Social work",
+    "amountPerDisc": 65827440.2
+  },
+  {
+    "Discipline_Name": "Sociology",
+    "amountPerDisc": 1897365023.89
+  },
+  {
+    "Discipline_Name": "Sport Medicine",
+    "amountPerDisc": 4762239
+  },
+  {
+    "Discipline_Name": "Structural Research",
+    "amountPerDisc": 113467243.38
+  },
+  {
+    "Discipline_Name": "Surgery",
+    "amountPerDisc": 408653775.53
+  },
+  {
+    "Discipline_Name": "Swiss history",
+    "amountPerDisc": 483464640.18
+  },
+  {
+    "Discipline_Name": "Technical Physics",
+    "amountPerDisc": 54606881.55
+  },
+  {
+    "Discipline_Name": "Theatre and Cinema",
+    "amountPerDisc": 160198407
+  },
+  {
+    "Discipline_Name": "Theoretical Physics",
+    "amountPerDisc": 1724831695.58
+  },
+  {
+    "Discipline_Name": "Tropical Medicine",
+    "amountPerDisc": 60715937.78
+  },
+  {
+    "Discipline_Name": "Veterinary Medicine",
+    "amountPerDisc": 62257037.4
+  },
+  {
+    "Discipline_Name": "Visual arts and Art history",
+    "amountPerDisc": 844205802.97
+  },
+  {
+    "Discipline_Name": "Zoology",
+    "amountPerDisc": 613562976.9
+  }
+]
