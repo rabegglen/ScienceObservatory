@@ -28,13 +28,13 @@ fileList = list.files("./input/", full.names = TRUE)
 #### Importing files & processing them
 
 
-# pubEx = read_csv2("http://p3.snf.ch/P3Export/P3_GrantExport.csv") %>% 
-#   set_names(., str_replace_all(names(.), "\\s", "_")) 
-
-
-
-pubEx = read_csv2("./input/P3_PublicationExport.csv") %>% 
+pubEx = read_csv2("http://p3.snf.ch/P3Export/P3_PublicationExport.csv") %>% 
   set_names(., str_replace_all(names(.), "\\s", "_")) 
+
+
+
+# pubEx = read_csv2("./input/P3_PublicationExport.csv") %>% 
+#   set_names(., str_replace_all(names(.), "\\s", "_")) 
 pubEx = pubEx %>% 
   select(Publication_ID_SNSF, Project_Number, Publication_Year, Open_Access_Status, Open_Access_Type, Authors, Title_of_Publication) %>% 
   distinct(Title_of_Publication, .keep_all = TRUE)
@@ -44,8 +44,8 @@ pubEx = pubEx %>%
 
 ### here we need 
 
-graEx = read.csv2("./input/P3_GrantExport.csv") %>% 
-  set_names(., str_replace_all(names(.), "\\.", "_"))
+graEx = read_csv2("http://p3.snf.ch/P3Export/P3_GrantExport.csv") %>% 
+  set_names(., str_replace_all(names(.), "\\s", "_")) 
 
 graEx = graEx %>% 
   select(-Project_Number_String, -Project_Title, -Project_Title_English, -Funding_Instrument_Hierarchy, -Keywords) %>% ## cut out some data which is not needed
