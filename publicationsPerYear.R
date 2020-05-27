@@ -82,12 +82,12 @@ OARatio = pubEx %>%
 
 ### alternatively, directly from the web
 
-# pubEx = read_csv2("http://p3.snf.ch/P3Export/P3_GrantExport.csv") %>% 
-#   set_names(., str_replace_all(names(.), "\\s", "_")) 
+pubEx = read_csv2("http://p3.snf.ch/P3Export/P3_GrantExport.csv") %>% 
+  set_names(., str_replace_all(names(.), "\\s", "_")) 
 
 
-Projects = read.csv2("./input/P3_GrantExport.csv") %>% ### importing the data
-  set_names(., str_replace_all(names(.), "\\.", "_"))
+# Projects = read.csv2("./input/P3_GrantExport.csv") %>% ### importing the data
+#   set_names(., str_replace_all(names(.), "\\.", "_"))
 
 Proj = Projects %>% 
   tibble() %>% 
