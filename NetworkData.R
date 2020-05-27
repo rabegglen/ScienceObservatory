@@ -18,13 +18,11 @@ pacman :: p_load(
 #### prepare publication data
 
 
-# pubEx = read_csv2("http://p3.snf.ch/P3Export/P3_GrantExport.csv") %>% ### alternatively from the web
+pubEx = read_csv2("http://p3.snf.ch/P3Export/P3_GrantExport.csv") %>% ### alternatively from the web
+   set_names(., str_replace_all(names(.), "\\s", "_")) 
+
+# pubEx = read_csv2("./input/P3_PublicationExport.csv") %>% 
 #   set_names(., str_replace_all(names(.), "\\s", "_")) 
-
-
-
-pubEx = read_csv2("./input/P3_PublicationExport.csv") %>% 
-  set_names(., str_replace_all(names(.), "\\s", "_")) 
 pubEx = pubEx %>% ### more ore less same block as in publicationsPerYear.R
   filter(!is.na(Publication_Year)) %>% 
   distinct(Title_of_Publication, .keep_all = TRUE) %>% 
