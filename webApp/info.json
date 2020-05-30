@@ -1,0 +1,11 @@
+{
+"title": "Science Observatory",
+"description": "Nicht alle Publikationen aus vom Schweizerischen Nationalfonds (SNF) finanzierten Projekten stehen der Gesellschaft zur freien Verfügung. Es wird zwischen Open und Closed Access unterschieden. Mit dieser App können SNF Open Access Publikationen, Finanzierungstrends und Open Access Arten analysiert werden.",
+"authors": [
+    {"name": "Roman Abegglen", "email": "roman.abegglen@students.unibe.ch"},
+    {"name": "Pascal Stöckli", "email": "pascal.stoeckli@students.unibe.ch"}
+],
+"date": "2020-05-28",
+"category": "research",
+"software_license": "GNU General Public License v3"
+}

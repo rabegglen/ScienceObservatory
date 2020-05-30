@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+
+
+
+<head>
+    
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!--  <link rel = "stylesheet" type = "text/css" href = "./style.css"/>    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//google.com/jsapi"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/d3-simple-slider"></script>
+    <script src="https://unpkg.com/lodash"></script> <!-- Super good library for handling and summarising data! -->
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+</head>
+
+
+<body>
+
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #18338F;">
+            <a class="navbar-brand" href="#">Science Observatory</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar navbar-collapse" id="navbarNav">
+                <ul class="nav nav-tabs" id="navTab" role="tablist">
+
+                    <li class="nav-item">
+                        <a href="#Visualizations" class="nav-link" data-toggle="tab" role="tab"
+                            aria-controls="Visualizations" aria-selected="true"
+                            id="visualizations-tab">Visualisierungen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Interpretation" class="nav-link" data-toggle="tab" role="tab"
+                            aria-controls="Interpretation" aria-selected="false"
+                            id="interpretation-tab">Interpretation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Documentation" class="nav-link" data-toggle="tab" role="tab"
+                            aria-controls="Documentation" aria-selected="false" id="documentation-tab">Dokumentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Creators" class="nav-link" data-toggle="tab" role="tab" aria-controls="Creators"
+                            aria-selected="false" id="creators-tab">Ersteller</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <div class="tab-content" id="navTabContent">
+
+
+            <!-- Page Content #Visualizations -->
+
+            <div class="tab-pane fade show active" id="Visualizations" role="tabpanel"
+                aria-labelledby="visualizations-tab">
+
+                <div class="container">
+
+                    <!-- Sub-Selection -->
+
+                    <div class="list-group mt-4 list-group-horizontal" id="myList" role="tablist">
+                        <a class="list-group-item list-group-item-action active" data-toggle="list" href="#Funding"
+                            role="tab">SNF Funding</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list"
+                            href="#OpenAccessPublications" role="tab">Open Access Publikationen</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#OpenAccessSubject"
+                            role="tab">Open Access nach Forschungsrichtung</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#Sankey"
+                            role="tab">Open
+                            Access Arten</a>
+                    </div>
+
+
+                    <div class="tab-content" id="selectionContent">
+
+                        <!-- Funding -->
+
+                        <div class="tab-pane active" id="Funding" role="tabpanel">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="card mt-4">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Entwicklung der SNF Unterstützungsgelder nach
+                                                    Forschungsrichtung</h3>
+                                                <p class="card-text">In dieser Animation lassen sich die Trends der
+                                                    letzten 45 Jahre miterleben. Erfahren Sie, bei welchen
+                                                    Forschungsrichtungen der Schweizerische
+                                                    Nationalfonds über die Jahre Finanzierungsschwerpunkte gesetzt hat.
+                                                    Eine Analyse dazu finden Sie
+                                                    im Tab Interpretation.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-9">
+                                        <div class="card mt-4">
+                                            <div class="card-body">
+                                                <button id="replay" type="button" class="btn btn-secondary">Play/Replay Animation</button>
+                                                <!-- <button id="pause" type="button" class="btn btn-secondary">Slow Motion</button>-->
+                                                <!-- <button id="resume" type="button" class="btn btn-secondary">Resume Normal Speed</button>-->
+                                                <!-- <button id="x2" type="button" class="btn btn-secondary">Double Speed</button> -->
+                                                <!-- <button id="x3" type="button" class="btn btn-secondary">Triple Speed</button> -->
+                                                <div id="racing"></div>
+                                                <script src="./racingChart.js" type="module"></script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Open Access Publications -->
+
+                    
+                        <div class="tab-pane" id="OpenAccessPublications" role="tabpanel">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="card mt-4">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Anzahl Open Access Publikationen im Jahresverlauf
+                                                </h3>
+                                                <p class="card-text">Hier lässt sich mit Jahresverlauf nachverfolgen,
+                                                    wie viele Publikationen der vom SNF finanzierten Projekte
+                                                    letztendlich frei aufrufbar zur Verfügung standen - und wie viele
+                                                    nicht.
+                                                    Wechseln Sie mit der Auswahl zwischen den beiden Publikationsarten.
+                                                    Fahren Sie mit dem Mauszeiger über die Grafik, um sich die Anzahl
+                                                    Publikationen anzeigen zu lassen. Eine Analyse dazu
+                                                    finden Sie im Tab Interpretation.<br><br><br>Legende Open Access:</p>
+                                                <div class='my-legend'>
+                                                    <div class='legend-title'>Anzahl Publikationen (in Tausend)</div>
+                                                    <div class='legend-scale'>
+                                                        <ul class='legend-labels'>
+                                                            <li><span style='background:#F1EEF6;'></span>0-0.5</li>
+                                                            <li><span style='background:#BDC9E1;'></span>0.5-2</li>
+                                                            <li><span style='background:#74A9CF;'></span>2-3</li>
+                                                            <li><span style='background:#2B8CBE;'></span>3-4</li>
+                                                            <li><span style='background:#045A8D;'></span>4-5</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <br><br><br>Legende Closed Access:</p>
+                                                <div class='my-legend'>
+                                                    <div class='legend-title'>Anzahl Publikationen (in Tausend)</div>
+                                                    <div class='legend-scale'>
+                                                        <ul class='legend-labels'>
+                                                            <li><span style='background:#F1EEF6;'></span>0-1</li>
+                                                            <li><span style='background:#BDC9E1;'></span>1-3</li>
+                                                            <li><span style='background:#74A9CF;'></span>3-5</li>
+                                                            <li><span style='background:#2B8CBE;'></span>5-8</li>
+                                                            <li><span style='background:#045A8D;'></span>8-10</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-9">
+                                        <div class="card mt-4">
+                                            <div class="card-body">
+                                                <select id="selectButtonYr"
+                                                    class="btn btn-secondary dropdown-toggle"></select>
+                                                <div id="linePlot">
+                                                <script src="./OABubbleChart.js" , type="module"></script>
+                                                </div>
+                                                <!-- <div class="row align-items-center"> -->
+                                                <!-- <div class="col-sm"><p id="value-time"></p></div>-->
+                                                <!-- <div class="col-sm"><div id="slider-time"></div></div>-->
+                                                <!-- </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!-- Open Access Publications per Subject (Forschungsrichtung) -->
+
+                        <div class="tab-pane" id="OpenAccessSubject" role="tabpanel">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="card mt-4">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Open Access Publikationen nach Forschungsrichtung
+                                                </h3>
+                                                <p class="card-text">Hier zeigt sich einerseits die
+                                                    Publikationsproduktivität
+                                                    der einzelnen
+                                                    Forschungsrichtungen im Jahresverlauf und andererseits die freie
+                                                    Verfügbarkeit der
+                                                    Publikationen. Mit der Auswahl können Sie zwischen Open- und
+                                                    Closed-Access Publikationen wechseln.
+                                                    Eine Analyse dazu finden Sie im Tab
+                                                    Interpretation.<br><br><br>Legende:</p>
+                                                <div class='my-legend2'>
+                                                    <div class='legend-title2'>Forschungsrichtungen</div>
+                                                    <div class='legend-scale2'>
+                                                        <ul class='legend-labels2'>
+                                                            <li><span style='background:#8DD3C7;'></span>Biologie und
+                                                                Medinzin
+                                                            </li>
+                                                            <li><span style='background:#FFFFB3;'></span>Gesellschafts-
+                                                                und
+                                                                Sozialwissenschaften
+                                                            </li>
+                                                            <li><span style='background:#BEBADA;'></span>Natur- und
+                                                                Ingenieurswissenschaften
+                                                            </li>
+                                                            <li><span
+                                                                    style='background:#FB8072;'></span>Interdisziplinär
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-9">
+                                        <div class="card mt-4">
+                                            <div class="card-body">
+                                                <select id="selectButton"
+                                                    class="btn btn-secondary dropdown-toggle"></select>
+                                                <div id="bubbleChart"></div>
+                                                <script src="./bubbleChart.js" , type="module"></script>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Open Access Arten (Sankey) -->
+
+                        <div class="tab-pane" id="Sankey" role="tabpanel">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="card mt-4">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Arten der Publikations-Zugänglichkeit und ihre
+                                                    Häufigkeit</h3>
+                                                <p class="card-text">Hier wird für ein auswählbares Jahr dargestellt,
+                                                    welche
+                                                    Publikationsarten dass bei vom SNF unterstützten Projekten
+                                                    gewählt wurden. Fahren Sie mit dem Mauszeiger über die Grafik, um
+                                                    sich die Anzahl Publikationen anzeigen zu lassen. Eine Analyse dazu
+                                                    und die Bedeutung der
+                                                    verschiedenen Open Access Arten finden Sie im Tab Interpretation.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-9">
+                                        <div class="card mt-4">
+                                            <div class="card-body">
+                                                <select id="year" class="btn btn-secondary dropdown-toggle"></select>
+                                                <div id="sankey"></div>
+                                                <script src="./sankey.js" , type="module"></script>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- /.Open Access Arten (Sankey) -->
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.Page Content #Visualizations -->
+
+            <!-- Page Content #Interpretation -->
+            <div class="tab-pane mt-4" id="Interpretation" role="tabpanel" aria-labelledby="interpretation-tab">
+                <div class="container">
+
+                    <!-- Card 1  -->
+                    <div class="row">
+                        <div class="card mx-auto py-12 mb-3 col-6">
+                            <div class="card-body">
+                                <h5 class="card-title">Idee zur Visualisierung</h5>
+                                <p class="card-text">Wenn Forschung mit öffentlichen Mitteln finanziert wird, sollten
+                                    die
+                                    Forschungsergebnisse der Öffentlichkeit
+                                    auch kostenlos und einfach zugänglich zur Verfügung stehen - oder? Hört sich
+                                    schlüssig
+                                    an, ist in der Praxis aber
+                                    überhaupt nicht zwingend der Fall. Forscher stehen im Konflikt zwischen einer
+                                    Publikation in renommierten aber häufig
+                                    kostenpflichtigen Fachzeitschrift, versus Open Source Publikation. Nicht immer liess
+                                    sich das bisher vereinbaren. Darum haben die Hochschulen der Schweiz in einer
+                                    nationalen Strategie
+                                    beschlossen, dass alle mit öffentlichen Geldern finanzierten Publikationen ab 2024
+                                    frei zugänglich sein sollen.
+                                    Open Access wird in der Schweiz und weltweit zum Standard. Der Schweizerische
+                                    Nationalfonds fügt sich hier ein mit folgendem Ziel:
+                                    Ab 2020 sollen 100% der Resultate der von ihm finanzierten Projekte in frei
+                                    zugänglichen Publikationen oder Datenbanken sein
+                                    (Quelle: <a
+                                        href="http://www.snf.ch/de/derSnf/forschungspolitische_positionen/open_access/Seiten/default.aspx"
+                                        target="_blank">SNF Statement Open Access Publications</a>).
+                                    Die Ersteller dieser Visualisierungen haben sich über diese grosse Ankündigung
+                                    gefreut und sie zum Anlass genommen, die bisherige Entwicklung
+                                    zu beleuchten. Dazu wurde visualisiert, zu wie vielen Open- und Closed Source
+                                    Publikationen die vom Schweizerischen
+                                    Nationalfonds finanzierten Projekte geführt haben. Der Fokus lag dabei
+                                    auf dem zeitlichen Verlauf, der Finanzierung, den Forschungsrichtungen und der Open
+                                    Access Art.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="row">
+                        <div class="card mx-auto py-12 mb-3 col-6">
+                            <div class="card-body">
+                                <h5 class="card-title">Die Vorteile von Open Access</h5>
+                                <img src="./img/OpenAccessImage.png" class="img-fluid" alt="Responsive image">
+                                <p class="card-text">Quelle: <a href="https://oa100.snf.ch/de/home-de/"
+                                        target="_blank">SNF Open Access Website</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Card 3 -->
+                    <div class="row">
+                        <div class="card mx-auto py-12 mb-3 col-6">
+                            <div class="card-body">
+                                <h5 class="card-title">Verschiedene Arten von Open Access</h5>
+                                <p class="card-text">
+                                <p class="font-weight-bold">Gold Open Access:</p> Die Forschenden veröffentlichen ihre
+                                Resultate in OA-Zeitschriften und OA-Büchern,
+                                die sofort frei zugänglich sind.
+                                Beim diesem Weg leisten die Autorinnen und Autoren oft einen Beitrag an die
+                                Herstellungskosten.
+                                Der SNF bietet an, diese Kosten zu bezahlen. Die Unterstützung lässt sich über die
+                                digitale Plattform mySNF beantragen.<br><br>
+                                <p class="font-weight-bold">Green Open Access:</p> Die Forschenden publizieren die
+                                Resultate in einer kostenpflichtigen Zeitschrift,
+                                legen ihren Artikel aber spätestens nach 6 Monaten in einer öffentlichen Datenbank ab.
+                                Für Bücher gilt eine Frist von 12 Monaten.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="row">
+                        <div class="card mx-auto py-12 mb-3 col-6">
+                            <div class="card-body">
+                                <h5 class="card-title">Interpretation der SNF Funding Animation</h5>
+                                <p class="card-text">
+                                <p class="font-weight-bold">Bezug</p> In dieser Animation ist nicht direkt ersichtlich,
+                                wie viel Budget des Schweizerischen Nationalfonds in Open Access Publikationen floss.
+                                Es werden jedoch generelle Finanzierungstrends aufgezeigt, die nebenbei auch schön den
+                                Zeitgeist aufzeigen.<br><br>
+                                <p class="font-weight-bold">Finanzierungstrends</p> Von 1976 (siehe Bild) bis 1986 bekam
+                                fast durchgehend die Forschungsrichtung
+                                Condensed Matter Physics die meisten Gelder, gefolgt von weiteren Zweigen der Physik,
+                                Chemie und Biologie.
+                                Naturwissenschaften dominierten, einzig die Ökonomie bekam zwischen 1980 und 1985
+                                ähnlich viel Budget zugesprochen.
+                                Von 1987 bis 1995 waren der Reihe nach Structural Research, Clinical Enocrinology,
+                                Clinical Pathophysiology und dann Climatology
+                                hoch im Kurs. Danach bekam von 1996 bis 2000 die Forschungsrichtung Particle Physics ein
+                                Grossteil der Gelder zugesprochen.
+                                Ab 2000 ebenfalls stark und von 2005 bis 2010 sogar dominierend bei der Budgetverteilung
+                                war Clinical Immunology and Immunopathology.
+                                Ab der Jahrtausendwende wurde vermehrt in Projekte der Gesellschafts- und
+                                Sozialwissenschaften investiert. Von 2010 bis 2017 gab es keine
+                                absoluten Funding-Spitzenreiter mehr, das Budget wurde (zumindest in den Fachzweiten)
+                                ziemlich ausgewogen verteilt. Plasma Physics war häufig
+                                vorne anzutreffen. Ab 2017 sind keine Trends mehr ersichtlich, das liegt an der
+                                Datenstruktur und wird im nächsten Abschnitt näher erläutert.<br><br>
+                                <p class="font-weight-bold">Datenqualität</p> Die wenigsten Datensätze werden über eine
+                                Zeitspanne von 45 Jahren auf dieselbe Art und Weise
+                                aktualisiert, auch dieser nicht. So können Finanzierungsschwerpunkte manchmal von der
+                                Bildfläche verschwinden aufgrund der Umbenennung oder
+                                Aufsplittung eines Projektgebietes. Dafür, dass sie gar nicht mehr erscheinen, sorgt ab
+                                2017 die Interdisciplinary-Problematik:
+                                Der SNF weist einem Projekt seit spätestens 2017 die Forschungsrichtung
+                                Interdisciplinary zu, wenn es mehrere Forschungsrichtungen
+                                gleichzeitig umfasst. Beispielsweise ein Projekt von 2018 zur Entwicklung von Biomarkern
+                                umfasst die Richtungen Immunologie,
+                                Radiologie und Machine Learning. Das macht auf dem Papier Sinn, sorgt aber dafür, dass
+                                ab 2017 der Grossteil der Gelder zumindest
+                                für eine Trendanalyse nur noch über Umwege einer Forschungsrichtung zugewiesen werden
+                                kann.<br><br>
+                                <img src="./img/Funding1976.png" class="img-fluid" alt="Responsive image"><br>Bild: SNF Funding
+                                Animation
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="row">
+                        <div class="card mx-auto py-12 mb-3 col-6">
+                            <div class="card-body">
+                                <h5 class="card-title">Interpretation der Bubble Charts Open und Closed Access</h5>
+                                <p class="card-text">
+                                <p class="font-weight-bold">Verteilung der Publikationen im Jahresverlauf</p> Open- wie
+                                Closed Access Bubble Graphen sind links-schief. Diese
+                                Verteilung zeigt ein exponentieller Anstieg der Publikationen bis 2016. Dieser Anstieg
+                                erklärt sich nur zu einem kleinen Teil
+                                aus der höheren Anzahl finanzierter Projekte und höherem Budget.
+                                Ab 2016 ist die Zahl der Publikationen rückläufig (aus der Analyse ausgenommen: Jahr
+                                2020), das gilt für alle Hauptforschungsrichtungen.
+                                Das muss nicht zwingend schlecht sein, da Merkmale wie Publikationsgrösse und Qualität
+                                hier nicht sichtbar sind.<br><br>
+                                <p class="font-weight-bold">Open vs. Closed Access Publikationen</p> Wie in der
+                                Visualisierung Anzahl Open Access Publikationen im Jahresverlauf
+                                klarer ersichtlich, übersteigt im Jahr 2019
+                                die Anzahl Open Access Publikationen erstmals die Anzahl Closed Publikationen. Im Tab
+                                Open Access Publikationen ersichtlich:
+                                Die Closed Access Publikationen hatten ihren Peak im Jahr 2013
+                                und seither schwinden sie immer rasanter. Sie machen Platz für die Open Access
+                                Publikationen. Letztere sind nicht dadurch auf dem,
+                                Überholkurs, weil sie rasant ansteigen, sondern einfach weil sie stagnieren bzw. nur
+                                leicht zurückgehen. Das Ganze möglich machte, wie in der
+                                Gegenüberstellung ersichtlich, ein mit nur 3 Jahre Verzögerung auf die Closed Access
+                                Publikationen einsetzender exponentieller Anstieg der
+                                Open Access Publikationen.<br><br>
+                                <p class="font-weight-bold">Die Unterschiede bei den Hauptforschungsrichtungen</p>
+                                Unterschiede zwischen den Hauptforschungsrichtungen sind in
+                                der Visualisierung Open Access nach Forschungsrichtung zu erkennen. Sie sind primär geprägt durch die höhere Anzahl Gesamtpublikationen. 
+                                Die meisten Publikationen aus SNF-finanzierten Projekten stammen von den Natur- und Ingenieurwissenschaften, gefolgt von Biologie und Medizin und 
+                                zum Schluss Geistes- und Sozialwissenschaften (auf die Interdisziplinären Projekte wird in der Interpretation des Sankeys näher eingegangen). Diese 
+                                bewegen sich mehrheitlich im Gleichschritt.
+                                Dennoch zeigt die Visualisierung, dass die Richtung Biologie und Medizin in den Jahren 2017 und 2018 punkto Anteil Open Access Publikationen den 
+                                anderen davonzog. Während die anderen Hauptforschungsrichtungen leicht rückläufig waren und dann stagnierten, legte Biologie und Medizin temporär zu. 
+                                Dies weist auf gute Initiativen hin zu dieser Zeit. Im Folgejahr (2019) konnten die anderen Forschungsrichtungen nachziehen.<br><br>
+                                <img src="./img/Forschungsrichtung.png" class="img-fluid" alt="Responsive image"><br><br>Bild: Chart Open Access Publikationen nach Forschungsrichtung
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="row">
+                        <div class="card mx-auto py-12 mb-3 col-6">
+                            <div class="card-body">
+                                <h5 class="card-title">Interpretation des Sankeys Open Access Arten</h5>
+                                <p class="card-text">
+                                <p class="font-weight-bold">Datenqualität</p> Vor dem Jahr 2008 sind die absoluten
+                                Publikationszahlen mit dem Access-Merkmal sehr klein,
+                                darum sind die älteren Zahlen mit Vorsicht zu geniessen. Die erfasste
+                                Gesamtpublikationszahl steigt dann in den beiden Folgejahren aber rasant.
+                                Die damals klar dominierenden No Access Publikationen sind entsprechend kein
+                                Zufallsprodukt der Datensätze, sondern waren Realität.<br><br>
+                                <p class="font-weight-bold">Düstere Vergangenheit</p> Noch im Jahr 2010 (siehe erstes
+                                Bild) dominierten die No Access Publikationen,
+                                3513 von insgesamt 4154 waren nicht öffentlich zugänglich. Ihr Anteil nahm von Jahr 2009
+                                auf 2010 sogar leicht zu.<br><br>
+                                <p class="font-weight-bold">Open Access Trend</p> Ab 2011 setzte ein stetiger Trend zu
+                                Open Access Publikationen ein. Lange nahm deren Anteil
+                                gleichmässig zu, bis er sich dann ab 2017 in grossen Sprüngen erhöhte.<br><br>
+                                <p class="font-weight-bold">Mehr Open als Closed</p> Ab 2019 (siehe zweites Bild) gab es
+                                dann das erste Mal mehr Open Access Publikationen (3552)
+                                als Closed Access Publikationen (2297), und dies gleich deutlich.
+                                Seit 2017 ist ein starker Trend zu Gold Open Access zu erkennen (im Vergleich zu Green
+                                Open Access ).
+                                Zuvor waren Green und Gold Open Access Publikationen immer etwa ähnlich häufig.<br><br>
+                                <p class="font-weight-bold">Website Publikation als Open Access Art</p> Im Sankey wird
+                                einen starken Rückgang der Website Open Access
+                                Publikationen ersichtlich. Falls dem so ist (und diese Publikationen nun nicht
+                                stattdessen als Unknown Type Publikationen in der
+                                Statistik erscheinen) begrüssen die Ersteller diese Entwicklung. Denn eine Publikation
+                                auf z.B. der Websites eines Instituts ist zwar
+                                Open Access, aber über die Jahre können solche Links ins Leere führen. Die Wartung
+                                dieser Links ist nicht garantiert, es könnte in
+                                manchen Fällen ein ungewollter
+                                Closed Access resultieren.<br><br>
+                                <p class="font-weight-bold">Das Jahr 2020</p> In der ersten Jahreshälfte bestätigt sich
+                                die Fortsetzung des Open Access Trends. Dennoch
+                                wird der SNF sein selbst gesetztes Ziel von 100% Open Access Resultaten natürlich noch
+                                nicht erreichen. Es ist anzunehmen, dass dieses
+                                Ziel die Projekte (und deren Publikationen) ab 2020 betrifft und nicht die Publikationen
+                                von Projekten,
+                                die bereits vor diesem Stichdatum anliefen.<br><br>
+                                <img src="./img/Sankey2010.png" class="img-fluid" alt="Responsive image"><br>Bild: Sankey
+                                2010<br><br><br>
+                                <img src="./img/Sankey2019.png" class="img-fluid" alt="Responsive image"><br>Bild: Sankey
+                                2019
+
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 6-->
+                    <div class="row">
+                        <div class="card mx-auto py-12 mb-3 col-6">
+                            <div class="card-body">
+                                <h5 class="card-title">Vorschläge der Ersteller für weiteres Vorgehen</h5>
+                                <p class="card-text">Wie in den Interpretationen festgestellt, hat der Schweizerische
+                                    Nationalfonds sein 100% Open Access Ziel auf das Jahr
+                                    2020 angesetzt - in den Zahlen wird sich das aber erst mit Verspätung
+                                    niederschlagen. Dies aus dem in der Interpretation genannten Grund:
+                                    Vom Sponsoring eines Projektes bis zur
+                                    Publikation der Ergebnisse können einige Jahre vergehen. Deshalb schlagen die
+                                    Ersteller vor, mit diesen oder ähnlichen Visualisierungen
+                                    den Projektverlauf auch in den weiteren Jahren mitzuverfolgen. Ausserdem sollte
+                                    weiterhin auf die Open Access Arten geachtet werden, es
+                                    kann auch dort noch frappante Unterschiede geben.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ende Card 6 -->
+                </div>
+
+
+            </div>
+
+
+            <!-- /.Page Content #Interpretation -->
+
+            <!-- Page Content #Documentation -->
+
+            <div class="tab-pane mt-4" id="Documentation" role="tabpanel" aria-labelledby="documentation-tab">
+                <div class="container">
+
+                    <!-- Card 1  -->
+                    <div class="row">
+                        <div class="card mx-auto py-12 mb-3 col-6">
+                            <div class="card-body">
+                                <h5 class="card-title">Herkunft der Daten</h5>
+                                <p class="card-text">Im Rahmen seiner Pflichten, informiert der Schweizerische
+                                    Nationalfonds (SNF) die Öffentlichkeit über seine Förderungstätigkeit
+                                    und veröffentlicht in seiner Forschungsdatenbank P3 Daten zu den von ihm geförderten
+                                    Projekten, Personen und Publikationen.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="row">
+                        <div class="card mx-auto py-12 mb-3 col-6">
+                            <div class="card-body">
+                                <h5 class="card-title">P3 Quellen</h5>
+                                <p class="card-text">P3 wird täglich aktualisiert. Sobald ein Beitrag freigegeben ist,
+                                    werden die entsprechenden Daten in P3 veröffentlicht.
+                                    Die Freigabe eines Beitrages fällt nicht notwendigerweise mit der Zusprache zusammen
+                                    und kann zu einem wesentlich späteren Zeitpunkt erfolgen, zum Beispiel, wenn vor
+                                    Forschungsbeginn Genehmigungen
+                                    erwirkt werden müssen.</p>
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Quelle</th>
+                                            <th>Daten/Inhalt</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="http://p3.snf.ch/P3Export/P3_PublicationExport.csv"
+                                                    target="_blank">P3_PublicationExport</a></td>
+                                            <td>Publikationen (aus SNF-finanzierten Projekten)</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="http://p3.snf.ch/P3Export/P3_GrantExport.csv"
+                                                    target="_blank">P3_GrantExport</a></td>
+                                            <td>Projekte (SNF-finanziert)</td>
+                                        </tr>
+                                        </tr>
+
+                                        <b>P3_PublicationExport</b><br><br>
+                                        Dieser Datensatz enthält daten über Publikationen. Diese Daten beinhalten Autoren, Disziplin, Publikationsjahr und für uns sehr wichtig der Open Access
+                                        Status der jeweiligen Publikationen. Der Schlüssel in den Daten welche dieser Datensatz mit dem anderen verbindet ist die Projektnummer, bei welcher die jeweiligen
+                                        Publikation zugeordnet ist.<br><br>
+
+                                        <b>P3_GrantExport</b><br><br>
+                                        Dieser Datensatz enthält Daten zu den Projekten und deren Finanzierung. Insbesondere interessant waren für uns Geldbeträge,
+                                        sowie die jeweilige Projektdauer. Diese Daten wurden wie oben schon erwähnt via Projektnummer mit den Publikationsdaten verknüpft.
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Card 3  -->
+                    <div class="row">
+                        <div class="card mx-auto py-12 mb-3 col-6">
+                            <div class="card-body">
+                                <h5 class="card-title">Datenaquise/Datenbereinigung</h5>
+                                <p class="card-text">Die P3 daten wurden zum grössten Teil mit R bereinigt. R wird allgemeint für statistische
+                                    Berechnungen verwendet, bietet aber seit einiger Zeit viele Hilfreiche Tools für Data Wrangling. Es war hier das
+                                    Tool der Wahl um auf effizientem Wege Daten zu Generieren, die von einer uns fremden Programmiersprache gelesen werden sollten.
+
+                                    <a href="https://www.r-project.org/" target = "_blank"><img src="./img/rLogo.png" class="img-fluid" alt="Responsive image"></a><br>Bild: R Logo<br><br><br>
+
+                                    <h6><b>Racing Chart</b></h6>
+                                    <br><br>
+                                    Für die Erstellung des Racing Charts war der Gebrauch von R relativ wichtig, da und es wurde in folgenden Schritten vorgegangen:
+
+                                    Die Datensätze <a href="http://p3.snf.ch/P3Export/P3_PublicationExport.csv"
+                                    target="_blank">P3_PublicationExport</a> und <a href="http://p3.snf.ch/P3Export/P3_GrantExport.csv"
+                                    target="_blank">P3_GrantExport</a> enthalten beide für diese Grafik relevante Daten. <a href="http://p3.snf.ch/P3Export/P3_PublicationExport.csv"
+                                    target="_blank">P3_PublicationExport</a> ist relevant,
+                                    da Informationen über Publikationen darin enthalten sind. Hier war insbesondere die Disziplin wichtig. <a href="http://p3.snf.ch/P3Export/P3_GrantExport.csv"
+                                    target="_blank">P3_GrantExport</a> hingegen enthält finanzielle
+                                    Daten, die über die eine Projektnummer, welche in beiden Datensätzen identisch, bzw. der Schlüssel ist. Diese Daten können dann via Join zusammengefügt werden
+                                    wobei dann die beiden relevanten Informationen bezüglich finanziellen Daten, sowie Jahrzahlen von Projekt Start -und Ende, sowie der Disziplin in einem Datensatz sind.
+                                    <br><br>
+                                    Um Gesprochene Forschungsbeiträge auf jedes Jahr eines Projektes, welches es zurücklegt aufzuschlüsseln, mussten die gesprochenen Beiträge gleichmässig auf jedes
+                                    Projektjahr gruppiert aufgeteilt werden, damit jedes Jahr einen Betrag erhält. Damit aber die Grafik den Effekt einer kontinuierlichen Steigerung/Senkung an Geldmengen
+                                    bekommt, musste eine noch feinere Auflösung in die Daten. Es wurden dann in einem letzten Schritt alle Jahre auf ein Zehntel Jahr aufgeteilt, wobei dann die 
+                                    Geldmengen pro Zehntelsjahr kumulativ gruppiert nach Diszipline aufsummiert wurden. Der gesamte Code für diese Operationen finden Sie im Github Repos unter 
+                                    
+                                    <td><a href="https://github.com/rabegglen/ScienceObservatory/blob/master/MoneyPerDisciplinePerYear.R"
+                                        target="_blank">diesem R File</a></td>
+                                    <br><br>
+                                    <a href="https://www.tidyverse.org/" target = "_blank"><img src="./img/rexcerpt.PNG" class="img-fluid" alt="Responsive image"></a><br>Bild: R Code stark mit starkem Gebrauch von Tidyverse<br><br><br>
+                                    <br>
+
+                                    <h6><b>Bubble Plots</b></h6>
+                                    <br>
+                                    Die Herangehensweise für die Datenaufbereitung für beide Bubbleplots war sehr ähnlich und wird hier für beide Grafiken zusammengefasst.
+                                    Bei dieser Grafik wurde mehr Bezug genommen auf den Open Access/Open Science Aspekt dieser Daten. Innerhalb von <a href="http://p3.snf.ch/P3Export/P3_PublicationExport.csv"
+                                    target="_blank">P3_PublicationExport</a> befindet sich eine boolesche Variable ob eine Publikation als Open Access registriert ist, oder nicht und ebenfalls wird, falls vorhanden
+                                    der Open Access Lizenztyp aufgeführt als Ordinale Variable. Für den ersten Bubble Plot wird einfach gruppiert nach Jahr die Information ob Open Access ja/nein aufsummiert.
+                                    <br>
+                                    Für die zweite Grafik, welche ja in der Legende noch entsprechende Forschungsrichtungen aufweist, wurde folgendermassen vorgegangen:<br>
+                                    Der SNF verwaltet Projekte nach Hierarchiestufen. Diese fangen mit der obersten Stufe an, welche entweder Biologie & Medizin, Gesellschaft- und Sozialwissenschaften,
+                                    Natur -und Ingenieurswissenschaften, sowie auf Interdisziplinäre Projekte aufgeteilt ist. Die Hierarchie endet meist mit einer spezifischen Disziplin, wie Pädagogik, etc.<br>
+                                    Diese Hierarchie ist in einem Textstring als Variable im Datensatz vorhanden.
+                                    Im ersten Versuch, wurde die ganze Hierarchie übernommen und die Grafik nach letzterer gruppiert. Das Problem war aber, dass die Grafik überladen war
+                                    und damit schlecht leserlich. Ebenfalls hat sich die ordinale Farbskala wiederholt, was zu Verwirrungen führen könnte.
+                                    <br>
+                                    <a href="https://ell.stackexchange.com/questions/71848/what-is-the-meaning-of-what-a-mess/71855" target = "_blank"><img src="./img/bubblefail2.PNG" class="img-fluid" alt="Responsive image"></a>
+                                    <br>Bild: Erster Versuch des gruppierten Bubble Plots<br>
+                                    <br>
+                                    Wir haben uns dann dafür entschieden die oberste Stufe der  Hierarchie als Gruppierung zu nehmen, was der Grafik sehr viel mehr Luft verschaffen sollte. Um das zu bewerkstelligen,
+                                    wurde mit einem <a href="https://www.regular-expressions.info/lookaround.html"
+                                    target="_blank">positiven lookbehind</a> das Semikolon gemachted, welches die oberste Stufe des "Hierarchiestrings" vom Rest trennt.
+                                    Ein Beispiel eines solchen Textstrings kann so aussehen:<br> <b>"Humanities and Social Sciences;Theology & religious studies, history, classical studies, archaeology, prehistory and early history"</b>
+                                    <br><br>
+                                    Nimmt man jetzt obingen String als Beispiel, so wird daraus "Humanities and Social Sciences", da alles nach dem Semikolon wegfällt. Auf diese Weise haben wir unsere Gruppierung geschaffen.
+                                    <br>
+                                    Der Komplette Code für diese Datenaufbereitung kann 
+                                    <td><a href="https://github.com/rabegglen/ScienceObservatory/blob/master/publicationsPerYear.R"
+                                        target="_blank">hier</a></td>
+                                        gefunden werden
+                                    
+                                    <br><br>
+
+                                    <b>Sankey</b>
+                                    <br><br>
+                                    Sankeys erfordern Netzwerkdaten, welche Informationen darüber enthalten, von welchem Knotenpunkt in einem Netzwerk zu einem anderen wie viel Menge (Hier Publikationen) fliesst.
+                                    Hier wurde wieder mit Publikationsdaten gearbeitet, wobei nun auch der Typ der Open Access Lizenz in betracht gezogen wurde. Jeder Punkt kann als Source oder Target, oder im Falle 
+                                    eines Verbindungsstücks (vgl. Knoten Open Access im Sankey Diagramm). Die Verbindungen geben dann an von welchem Punkt zu einem Anderen die Route geht und der zugehörige Wert gibt
+                                    an, wie viele Publikationen dem jeweiligen Typ angehören.
+                                    <br>
+                                    Näher betrachtet ist die Publikation eines Artikels der Start, also die Quelle. Diese kann dann entweder Open Access oder nicht sein. Besteht kein Open Access, so endet die Reise schon hier.
+                                    Besteht aber ein Open Access Status, so bestehen folgende Möglichkeiten: <br>
+                                    -Green<br>
+                                    -Gold<br>
+                                    -Website<br>
+                                    -Unknown<br>
+                                    Diese Verbindungen kann man mit Aufsummierungen pro Gruppe (also Open Access: Ja/Nein; Open Access Typ) und der Deklaration von Gruppen als Quelle oder Ziel (oder beides) mit entsprechenden
+                                    Flüssen an Publikationen quantifizieren. Dies wurde innerhalb eines simplen for Loops pro Jahr mit R <td><a href="https://github.com/rabegglen/ScienceObservatory/blob/master/NetworkData.R"
+                                        target="_blank">gemacht</a></td>.
+
+                                    <br><br><br>
+
+                                    Es wurden Folgende R Libraries benutzt:
+                                    <br>
+                                    <td><a href="https://www.tidyverse.org/"
+                                        target="_blank">tidyverse</a></td>
+                                        <br>
+                                    <td><a href="https://cran.r-project.org/web/packages/rio/vignettes/rio.html"
+                                        target="_blank">rio</a></td>
+                                        <br>
+                                    <td><a href="https://github.com/Rdatatable/data.table/wiki"
+                                        target="_blank">data.table</a></td>
+                                        <br>
+                                    <td><a href="https://cran.r-project.org/web/packages/jsonlite/vignettes/json-aaquickstart.html"
+                                        target="_blank">jsonlite</a></td>
+                                        <br>
+                                    <td><a href="https://www.rdocumentation.org/packages/janitor/versions/2.0.1"
+                                        target="_blank">janitor</a></td>
+
+                                        
+                                
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4  -->
+                    <div class="row">
+                        <div class="card mx-auto py-12 mb-3 col-6">
+                            <div class="card-body">
+                                <h5 class="card-title">JS & D3</h5>
+                                <p class="card-text">
+
+                                    <h6><b>Racing Chart</b></h6>
+                                    <br>
+                                    Der "Racing Effekt" wurde damit erzielt, dass eine Tickerfunktion erstellt wurde, welche entlang der Zeitachse läuft
+                                    und den "Fluss" der Gelder entsprechend darstellen kann indem die Masse der Balken konstant verändert werden.
+                                    Solche D3 spezifischen Funktionen für Animationen waren uns
+                                    völlig unbekannt, aber sie verlaufen wie ein Loop, welcher sich der Zeitachse entlangbewegt. Gleichzeitig gibt es ein
+                                    konstantes Update aller beteiligten Zahlen, was Finanzzahlen, sowie die Jahreszahl beinhaltet. <br>
+                                    Der Play/Replay Knopf startet dann immer die Funktion von Anfang an neu. Es wurde der Farbgradient 
+                                    <td><a href="https://github.com/d3/d3-scale-chromatic/blob/master/src/diverging/RdBu.js"
+                                        target="_blank">RdBu</a></td> gewählt, da er dem Corporate Design des SNF am ähnlichsten sah, aber nicht komplett identisch ist.
+                                        <br><br><br>
+                                    
+                                    <h6><b>Bubble Charts</b></h6>
+                                    <br>
+                                    Die Bubble Charts sollten helfen den Übergang von durchaus interessanten Finanzdaten zu Publikationsdaten zu machen und waren Übergangsstück
+                                    der Story. Diese Grafiken bestehen aus relativ ähnlichen Funktionen, welche Kreise entsprechend auf x & y Achse setzen und sich via Transition
+                                    bewegen. Die Daten sind beim ersten Beispiel nach Open Access und Non-Open Access aufgeteilt.<br><br>
+                                    <b>Nur Open Access / non-Open Access</b><br>
+                                    Wird das Drop-Down bedient, so werden die Daten entsprechend gefiltert und durch die Kreise repräsentiert. Eine Funktion, welche die Kreise bewegt,
+                                    modifiziert entsprechend die Position letzterer. Im Falle dieses Charts wird der Farbgradient dem Maximum der Publikation angepasst.
+                                    <br>
+                                    <b>Gruppiert nach Disziplin</b><br>
+                                    Nur wenige Unterschiede zum nicht gruppierten Chart: Der Farbgradient ist hier ordinal und gruppiert sich nach den obersten Stufen der Disziplin-Hierarchie (siehe oben im "R-Teil").
+                                    Die Gruppierung ist logischerweise auch selbst in den angezeigten Daten vorhanden.
+
+                                    <br>
+                                    Beide Grafiken verfügen über entsprechende Tooltips, welche sich am Kreis im DOM orientieren und die y-Achsen sind dynamisch am jeweiligen Gruppenmaximum orientiert.
+                                    <br><br><br>
+
+                                    <h6><b>Sankey</b></h6>
+                                    <br>
+                                    Das Sankey Diagramm wurde mit den mit R kompilierten Netzwerkdaten erstellt. Die Farben entsprechen den jeweiligen Lizenztypen, oder einer
+                                    persönlichen Interpretation einer Farbzuordnung. Der Sankey ist eine Funktion, welche direkt die Daten als .json liest und die Grafik erstellt.
+                                    Via Dropdown können die Daten entsprechend nach Jahr gefiltert werden, was dann zur Folge hat, dass es jeweils ein Update im Sankey Diagramm gibt.
+                                    Es wäre für uns sehr schön gewesen eine Transition zu machen, welche den Übergang beim Jahreswechsel etwas flüssiger hätte aussehen lassen, aber das Feature
+                                    war dann nicht mehr in Scope mit dem Zeitbudget.
+                                    <br><br><br>
+
+                                    <h6><b>Allgemein</b></h6>
+                                    <br>
+                                    Die Applikation verfügt über ein Skript, welches die Aufgabe des Datenmanagements hat. Dieses Skript liest Daten via ajax() aus den Rohdaten
+                                    und verteilt diese dann via Exporte an die entsprechenden Module. Die Idee hierbei war, dass das Daten-Management von den Visualisierungen
+                                    getrennt sein sollte um den Code besser lesbar und wartbar zu machen. <br>
+                                    Meist verwendete Libraries:<br>
+                                    
+                                    <a href="https://lodash.com/"
+                                        target="_blank">Lodash</a>: Super Library für Leute, die viel R benutzen :-)<br>
+                                    
+                                        <a href="https://d3js.org/"
+                                    target="_blank">D3.js</a>: Naja, das war klar<br>
+
+                                     <a href="https://jquery.com/"
+                                    target="_blank">JQuery</a>: Für Datenimporte via Ajax()<br>
+                                        
+
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="row">
+                        <div class="card mx-auto py-12 mb-3 col-6">
+                            <div class="card-body">
+                                <h5 class="card-title">Github</h5>
+                                <p class="card-text">
+                                    <a href="https://github.com/rabegglen/ScienceObservatory"
+                                        target="_blank">https://github.com/rabegglen/ScienceObservatory</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <!-- /.Page Content #Documentation -->
+
+            <!-- Page Content #Creators -->
+
+            <div class="tab-pane mt-4" id="Creators" role="tabpanel" aria-labelledby="creators-tab">
+                <div class="container">
+<!-- Card -->
+                    <div class="row">
+                        <div class="card mx-auto py-12 mb-3 col-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Über uns</h5>
+                                <p class="card-text">
+                                    <p class="font-weight-bold">Roman Abegglen</p> 
+                                    Student MSc Betriebswirtschaftslehre<br>
+                                    roman.abegglen@students.unibe.ch<br><br>
+                                    <p class="font-weight-bold">Pascal Stöckli</p>
+                                     Student MSc Betriebswirtschaftslehre<br>
+                                     pascal.stoeckli@students.unibe.ch
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.Card -->
+
+                </div>
+            </div>
+
+            <!-- /.Page Content #Creators -->
+
+        </div>
+    </div>
+</body>
+
+<footer class="page-footer font-small blue">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      
+Roman Christian Abegglen, Pascal Stöckli
+
+published under GNU General Public License v3
+
+    </div>
+    <!-- Copyright -->
+  
+  </footer>

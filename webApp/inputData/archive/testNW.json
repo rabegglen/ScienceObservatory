@@ -1,0 +1,837 @@
+{
+  "links": [
+    {
+      "source": "publication",
+      "target": "No Open Access",
+      "value": "8225",
+      "year": 2015
+    },
+    {
+      "source": "publication",
+      "target": "Open Access",
+      "value": "4214",
+      "year": 2015
+    },
+    {
+      "source": "Open Access",
+      "target": "Publisher (Gold Open Access)",
+      "value": "1515",
+      "year": 2015
+    },
+    {
+      "source": "Open Access",
+      "target": "Repository (Green Open Access)",
+      "value": "1142",
+      "year": 2015
+    },
+    {
+      "source": "Open Access",
+      "target": "Unknown Type",
+      "value": "85",
+      "year": 2015
+    },
+    {
+      "source": "Open Access",
+      "target": "Website",
+      "value": "1472",
+      "year": 2015
+    },
+    {
+      "source": "publication",
+      "target": "No Open Access",
+      "value": "1",
+      "year": 1989
+    },
+    {
+      "source": "publication",
+      "target": "No Open Access",
+      "value": "2",
+      "year": 1988
+    },
+    {
+      "source": "publication",
+      "target": "No Open Access",
+      "value": "2",
+      "year": 1990
+    },
+    {
+      "source": "publication",
+      "target": "Open Access",
+      "value": "1",
+      "year": 1990
+    },
+    {
+      "source": "Open Access",
+      "target": "Website",
+      "value": "1",
+      "year": 1990
+    },
+    {
+      "source": "publication",
+      "target": "No Open Access",
+      "value": "1",
+      "year": 1992
+    },
+    {
+      "source": "publication",
+      "target": "No Open Access",
+      "value": "2",
+      "year": 1994
+    },
+    {
+      "source": "publication",
+      "target": "No Open Access",
+      "value": "8",
+      "year": 1998
+    },
+    {
+      "source": "publication",
+      "target": "Open Access",
+      "value": "1",
+      "year": 1998
+    },
+    {
+      "source": "Open Access",
+      "target": "Repository (Green Open Access)",
+      "value": "1",
+      "year": 1998
+    },
+    {
+      "source": "publication",
+      "target": "No Open Access",
+      "value": "6",
+      "year": 1996
+    },
+    {
+      "source": "publication",
+      "target": "No Open Access",
+      "value": "23",
+      "year": 2002
+    },
+    {
+      "source": "publication",
+      "target": "Open Access",
+      "value": "4",
+      "year": 2002
+    },
+    {
+      "source": "Open Access",
+      "target": "Publisher (Gold Open Access)",
+      "value": "2",
+      "year": 2002
+    },
+    {
+      "source": "Open Access",
+      "target": "Repository (Green Open Access)",
+      "value": "2",
+      "year": 2002
+    },
+    {
+      "source": "publication",
+      "target": "No Open Access",
+      "value": "34",
+      "year": 2003
+    },
+    {
+      "source": "publication",
+      "target": "Open Access",
+      "value": "8",
+      "year": 2003
+    },
+    {
+      "source": "Open Access",
+      "target": "Publisher (Gold Open Access)",
+      "value": "2",
+      "year": 2003
+    },
+    {
+      "source": "Open Access",
+      "target": "Repository (Green Open Access)",
+      "value": "5",
+      "year": 2003
+    },
+    {
+      "source": "Open Access",
+      "target": "Website",
+      "value": "1",
+      "year": 2003
+    },
+    {
+      "source": "publication",
+      "target": "No Open Access",
+      "value": "31",
+      "year": 2001
+    },
+    {
+      "source": "publication",
+      "target": "Open Access",
+      "value": "7",
+      "year": 2001
+    },
+    {
+      "source": "Open Access",
+      "target": "Repository (Green Open Access)",
+      "value": "6",
+      "year": 2001
+    },
+    {
+      "source": "Open Access",
+      "target": "Website",
+      "value": "1",
+      "year": 2001
+    },
+    {
+      "source": "publication",
+      "target": "No Open Access",
+      "value": "4",
+      "year": 1995
+    },
+    {
+      "source": "publication",
+      "target": "Open Access",
+      "value": "1",
+      "year": 1995
+    },
+    {
+      "source": "Open Access",
+      "target": "Website",
+      "value": "1",
+      "year": 1995
+    },
+    {
+      "source": "publication",
+      "target": "No Open Access",
+      "value": "11",
+      "year": 1997
+    },
+    {
+      "source": "publication",
+      "target": "Open Access",
+      "value": "2",
+      "year": 1997
+    },
+    {
+      "source": "Open Access",
+      "target": "Repository (Green Open Access)",
+      "value": "2",
+      "year": 1997
+    },
+    {
+      "source": "publication",
+      "target": "No Open Access",
+      "value": "50",
+      "year": 2004
+    },
+    {
+      "source": "publication",
+      "target": "Open Access",
+      "value": "10",
+      "year": 2004
+    },
+    {
+      "source": "Open Access",
+      "target": "Publisher (Gold Open Access)",
+      "value": "3",
+      "year": 2004
+    },
+    {
+      "source": "Open Access",
+      "target": "Repository (Green Open Access)",
+      "value": "5",
+      "year": 2004
+    },
+    {
+      "source": "Open Access",
+      "target": "Website",
+      "value": "2",
+      "year": 2004
+    },
+    {
+      "source": "publication",
+      "target": "No Open Access",
+      "value": "15",
+      "year": 1999
+    },
+    {
+      "source": "publication",
+      "target": "Open Access",
+      "value": "5",
+      "year": 1999
+    },
+    {
+      "source": "Open Access",
+      "target": "Repository (Green Open Access)",
+      "value": "5",
+      "year": 1999
+    },
+    {
+      "source": "publication",
+      "target": "No Open Access",
+      "value": "14",
+      "year": 2000
+    },
+    {
+      "source": "publication",
+      "target": "Open Access",
+      "value": "4",
+      "year": 2000
+    },
+    {
+      "source": "Open Access",
+      "target": "Repository (Green Open Access)",
+      "value": "4",
+      "year": 2000
+    },
+    {
+      "source": "publication",
+      "target": "No Open Access",
+      "value": "84",
+      "year": 2006
+    },
+    {
+      "source": "publication",
+      "target": "Open Access",
+      "value": "16",
+      "year": 2006
+    },
+    {
+      "source": "Open Access",
+      "target": "Publisher (Gold Open Access)",
+      "value": "4",
+      "year": 2006
+    },
+    {
+      "source": "Open Access",
+      "target": "Repository (Green Open Access)",
+      "value": "10",
+      "year": 2006
+    },
+    {
+      "source": "Open Access",
+      "target": "Website",
+      "value": "2",
+      "year": 2006
+    },
+    {
+      "source": "publication",
+      "target": "No Open Access",
+      "value": "3513",
+      "year": 2010
+    },
+    {
+      "source": "publication",
+      "target": "Open Access",
+      "value": "641",
+      "year": 2010
+    },
+    {
+      "source": "Open Access",
+      "target": "Publisher (Gold Open Access)",
+      "value": "176",
+      "year": 2010
+    },
+    {
+      "source": "Open Access",
+      "target": "Repository (Green Open Access)",
+      "value": "185",
+      "year": 2010
+    },
+    {
+      "source": "Open Access",
+      "target": "Unknown Type",
+      "value": "8",
+      "year": 2010
+    },
+    {
+      "source": "Open Access",
+      "target": "Website",
+      "value": "272",
+      "year": 2010
+    },
+    {
+      "source": "publication",
+      "target": "No Open Access",
+      "value": "6880",
+      "year": 2011
+    },
+    {
+      "source": "publication",
+      "target": "Open Access",
+      "value": "1558",
+      "year": 2011
+    },
+    {
+      "source": "Open Access",
+      "target": "Publisher (Gold Open Access)",
+      "value": "445",
+      "year": 2011
+    },
+    {
+      "source": "Open Access",
+      "target": "Repository (Green Open Access)",
+      "value": "493",
+      "year": 2011
+    },
+    {
+      "source": "Open Access",
+      "target": "Unknown Type",
+      "value": "21",
+      "year": 2011
+    },
+    {
+      "source": "Open Access",
+      "target": "Website",
+      "value": "599",
+      "year": 2011
+    },
+    {
+      "source": "publication",
+      "target": "No Open Access",
+      "value": "50",
+      "year": 2005
+    },
+    {
+      "source": "publication",
+      "target": "Open Access",
+      "value": "7",
+      "year": 2005
+    },
+    {
+      "source": "Open Access",
+      "target": "Publisher (Gold Open Access)",
+      "value": "2",
+      "year": 2005
+    },
+    {
+      "source": "Open Access",
+      "target": "Repository (Green Open Access)",
+      "value": "4",
+      "year": 2005
+    },
+    {
+      "source": "Open Access",
+      "target": "Website",
+      "value": "1",
+      "year": 2005
+    },
+    {
+      "source": "publication",
+      "target": "No Open Access",
+      "value": "164",
+      "year": 2007
+    },
+    {
+      "source": "publication",
+      "target": "Open Access",
+      "value": "31",
+      "year": 2007
+    },
+    {
+      "source": "Open Access",
+      "target": "Publisher (Gold Open Access)",
+      "value": "10",
+      "year": 2007
+    },
+    {
+      "source": "Open Access",
+      "target": "Repository (Green Open Access)",
+      "value": "13",
+      "year": 2007
+    },
+    {
+      "source": "Open Access",
+      "target": "Website",
+      "value": "8",
+      "year": 2007
+    },
+    {
+      "source": "publication",
+      "target": "No Open Access",
+      "value": "1464",
+      "year": 2009
+    },
+    {
+      "source": "publication",
+      "target": "Open Access",
+      "value": "272",
+      "year": 2009
+    },
+    {
+      "source": "Open Access",
+      "target": "Publisher (Gold Open Access)",
+      "value": "76",
+      "year": 2009
+    },
+    {
+      "source": "Open Access",
+      "target": "Repository (Green Open Access)",
+      "value": "99",
+      "year": 2009
+    },
+    {
+      "source": "Open Access",
+      "target": "Website",
+      "value": "97",
+      "year": 2009
+    },
+    {
+      "source": "publication",
+      "target": "No Open Access",
+      "value": "8163",
+      "year": 2016
+    },
+    {
+      "source": "publication",
+      "target": "Open Access",
+      "value": "4883",
+      "year": 2016
+    },
+    {
+      "source": "Open Access",
+      "target": "Publisher (Gold Open Access)",
+      "value": "1871",
+      "year": 2016
+    },
+    {
+      "source": "Open Access",
+      "target": "Repository (Green Open Access)",
+      "value": "1414",
+      "year": 2016
+    },
+    {
+      "source": "Open Access",
+      "target": "Unknown Type",
+      "value": "112",
+      "year": 2016
+    },
+    {
+      "source": "Open Access",
+      "target": "Website",
+      "value": "1486",
+      "year": 2016
+    },
+    {
+      "source": "publication",
+      "target": "No Open Access",
+      "value": "8460",
+      "year": 2012
+    },
+    {
+      "source": "publication",
+      "target": "Open Access",
+      "value": "2385",
+      "year": 2012
+    },
+    {
+      "source": "Open Access",
+      "target": "Publisher (Gold Open Access)",
+      "value": "805",
+      "year": 2012
+    },
+    {
+      "source": "Open Access",
+      "target": "Repository (Green Open Access)",
+      "value": "625",
+      "year": 2012
+    },
+    {
+      "source": "Open Access",
+      "target": "Unknown Type",
+      "value": "29",
+      "year": 2012
+    },
+    {
+      "source": "Open Access",
+      "target": "Website",
+      "value": "926",
+      "year": 2012
+    },
+    {
+      "source": "publication",
+      "target": "No Open Access",
+      "value": "435",
+      "year": 2008
+    },
+    {
+      "source": "publication",
+      "target": "Open Access",
+      "value": "75",
+      "year": 2008
+    },
+    {
+      "source": "Open Access",
+      "target": "Publisher (Gold Open Access)",
+      "value": "20",
+      "year": 2008
+    },
+    {
+      "source": "Open Access",
+      "target": "Repository (Green Open Access)",
+      "value": "30",
+      "year": 2008
+    },
+    {
+      "source": "Open Access",
+      "target": "Website",
+      "value": "25",
+      "year": 2008
+    },
+    {
+      "source": "publication",
+      "target": "No Open Access",
+      "value": "8926",
+      "year": 2013
+    },
+    {
+      "source": "publication",
+      "target": "Open Access",
+      "value": "2921",
+      "year": 2013
+    },
+    {
+      "source": "Open Access",
+      "target": "Publisher (Gold Open Access)",
+      "value": "1068",
+      "year": 2013
+    },
+    {
+      "source": "Open Access",
+      "target": "Repository (Green Open Access)",
+      "value": "740",
+      "year": 2013
+    },
+    {
+      "source": "Open Access",
+      "target": "Unknown Type",
+      "value": "22",
+      "year": 2013
+    },
+    {
+      "source": "Open Access",
+      "target": "Website",
+      "value": "1091",
+      "year": 2013
+    },
+    {
+      "source": "publication",
+      "target": "No Open Access",
+      "value": "8210",
+      "year": 2014
+    },
+    {
+      "source": "publication",
+      "target": "Open Access",
+      "value": "3623",
+      "year": 2014
+    },
+    {
+      "source": "Open Access",
+      "target": "Publisher (Gold Open Access)",
+      "value": "1243",
+      "year": 2014
+    },
+    {
+      "source": "Open Access",
+      "target": "Repository (Green Open Access)",
+      "value": "1037",
+      "year": 2014
+    },
+    {
+      "source": "Open Access",
+      "target": "Unknown Type",
+      "value": "41",
+      "year": 2014
+    },
+    {
+      "source": "Open Access",
+      "target": "Website",
+      "value": "1302",
+      "year": 2014
+    },
+    {
+      "source": "publication",
+      "target": "No Open Access",
+      "value": "231",
+      "year": 2020
+    },
+    {
+      "source": "publication",
+      "target": "Open Access",
+      "value": "534",
+      "year": 2020
+    },
+    {
+      "source": "Open Access",
+      "target": "Publisher (Gold Open Access)",
+      "value": "312",
+      "year": 2020
+    },
+    {
+      "source": "Open Access",
+      "target": "Repository (Green Open Access)",
+      "value": "110",
+      "year": 2020
+    },
+    {
+      "source": "Open Access",
+      "target": "Unknown Type",
+      "value": "112",
+      "year": 2020
+    },
+    {
+      "source": "publication",
+      "target": "No Open Access",
+      "value": "2297",
+      "year": 2019
+    },
+    {
+      "source": "publication",
+      "target": "Open Access",
+      "value": "3552",
+      "year": 2019
+    },
+    {
+      "source": "Open Access",
+      "target": "Publisher (Gold Open Access)",
+      "value": "2170",
+      "year": 2019
+    },
+    {
+      "source": "Open Access",
+      "target": "Repository (Green Open Access)",
+      "value": "918",
+      "year": 2019
+    },
+    {
+      "source": "Open Access",
+      "target": "Unknown Type",
+      "value": "432",
+      "year": 2019
+    },
+    {
+      "source": "Open Access",
+      "target": "Website",
+      "value": "32",
+      "year": 2019
+    },
+    {
+      "source": "publication",
+      "target": "No Open Access",
+      "value": "7047",
+      "year": 2017
+    },
+    {
+      "source": "publication",
+      "target": "Open Access",
+      "value": "4616",
+      "year": 2017
+    },
+    {
+      "source": "Open Access",
+      "target": "Publisher (Gold Open Access)",
+      "value": "2039",
+      "year": 2017
+    },
+    {
+      "source": "Open Access",
+      "target": "Repository (Green Open Access)",
+      "value": "1332",
+      "year": 2017
+    },
+    {
+      "source": "Open Access",
+      "target": "Unknown Type",
+      "value": "193",
+      "year": 2017
+    },
+    {
+      "source": "Open Access",
+      "target": "Website",
+      "value": "1052",
+      "year": 2017
+    },
+    {
+      "source": "publication",
+      "target": "No Open Access",
+      "value": "5500",
+      "year": 2018
+    },
+    {
+      "source": "publication",
+      "target": "Open Access",
+      "value": "4614",
+      "year": 2018
+    },
+    {
+      "source": "Open Access",
+      "target": "Publisher (Gold Open Access)",
+      "value": "2524",
+      "year": 2018
+    },
+    {
+      "source": "Open Access",
+      "target": "Repository (Green Open Access)",
+      "value": "1266",
+      "year": 2018
+    },
+    {
+      "source": "Open Access",
+      "target": "Unknown Type",
+      "value": "290",
+      "year": 2018
+    },
+    {
+      "source": "Open Access",
+      "target": "Website",
+      "value": "534",
+      "year": 2018
+    },
+    {
+      "source": "publication",
+      "target": "No Open Access",
+      "value": "1",
+      "year": 1991
+    },
+    {
+      "source": "publication",
+      "target": "No Open Access",
+      "value": "1",
+      "year": 1960
+    },
+    {
+      "source": "publication",
+      "target": "No Open Access",
+      "value": "1",
+      "year": 1968
+    },
+    {
+      "source": "publication",
+      "target": "No Open Access",
+      "value": "1",
+      "year": 1987
+    }
+  ],
+  "nodes": [
+    {
+      "name": "publication"
+    },
+    {
+      "name": "Open Access"
+    },
+    {
+      "name": "No Open Access"
+    },
+    {
+      "name": "Publisher (Gold Open Access)"
+    },
+    {
+      "name": "Repository (Green Open Access)"
+    },
+    {
+      "name": "Unknown Type"
+    },
+    {
+      "name": "Website"
+    }
+  ]
+}

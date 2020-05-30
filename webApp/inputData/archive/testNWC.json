@@ -1,0 +1,62 @@
+
+  {
+    "nodes": [
+      {
+        "name": "No Open Access"
+      },
+      {
+        "name": "Open Access"
+      },
+      {
+        "name": "Open Access"
+      },
+      {
+        "name": "Open Access"
+      },
+      {
+        "name": "Open Access"
+      },
+      {
+        "name": "No Open Access"
+      },
+      {
+        "name": "Publisher (Gold Open Access)"
+      },
+      {
+        "name": "Repository (Green Open Access)"
+      },
+      {
+        "name": "Unknown Type"
+      },
+      {
+        "name": "Website"
+      }
+    ],
+    "links": [
+      {
+        "source": "No Open Access",
+        "target": "No Open Access",
+        "value": "3"
+      },
+      {
+        "source": "Open Access",
+        "target": "Publisher (Gold Open Access)",
+        "value": "7"
+      },
+      {
+        "source": "Open Access",
+        "target": "Repository (Green Open Access)",
+        "value": "5"
+      },
+      {
+        "source": "Open Access",
+        "target": "Unknown Type",
+        "value": "9"
+      },
+      {
+        "source": "Open Access",
+        "target": "Website",
+        "value": "6"
+      }
+    ]
+  }

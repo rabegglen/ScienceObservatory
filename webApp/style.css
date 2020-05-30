@@ -1,0 +1,247 @@
+
+
+
+/* The container */
+.container {
+
+    max-width:4000px;
+    min-height:100vh;
+    width:100%;
+    margin: auto;
+    box-sizing:border-box;
+    background-color:#e4ecee;
+}
+
+
+/* Bootstrap navbars and such */
+.collapse ul li a{
+    color:white
+  }
+  
+  .navbar-brand{ 
+    color:white
+  }
+
+  .nav-link,
+.dropdown-item {
+  color: white;
+}
+
+/* List-Group */
+/* Funktioniert so nicht, weil das Active-Element nicht mitzieht...
+a.list-group-item:hover{
+  background: #FF9933;
+  }
+
+  .active a.list-group-item{ 
+    background: #FF9933; 
+  }
+
+  .list-group-item.active:focus{ 
+    background: #FF9933; 
+  }
+
+*/
+
+/* Style for the racing chart */
+
+text{
+  font-size: 16px;
+  font-family: Open Sans, sans-serif;
+}
+text.title{
+  font-size: 24px;
+  font-weight: 500;
+}
+
+text.subTitle{
+    font-weight: 500;
+    fill: #777777;
+  }
+
+text.caption{
+    font-weight: 400;
+    font-size: 14px;
+    fill: #777777;
+  }
+
+text.label{
+    font-weight: 600;
+    fill: #777777;
+  }
+
+  text.valueLabel{
+   font-weight: 300;
+  }
+
+  text.yearText{
+    font-size: 64px;
+    font-weight: 700;
+    opacity: 0.6;
+    fill: #290066;
+  }
+
+
+  .tick text {
+    fill: #7c7b7c;
+  }
+
+/* Style for the racing chart */
+
+.xAxis .tick:nth-child(2) text {
+  text-anchor: start;
+}
+
+
+.tick line {
+  shape-rendering: CrispEdges;
+  stroke: #dddddd;
+}
+
+
+.tick line.origin{
+  stroke: #aaaaaa;
+}
+path.domain{
+  display: none;
+}
+
+
+path.color0 {
+    fill: #fff;
+}
+path.color1 {
+    fill: rgba(255,255,255,.3);
+}
+
+
+.card {display:inline-block;}
+
+
+
+
+/* Style for the bubble chart */
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+
+
+
+
+.bubbles {
+  stroke-width: 1px;
+  stroke: black;
+  opacity: .8
+}
+.bubbles:hover {
+  stroke: black;
+}
+
+
+
+
+
+/* Style for the sankey diagram */
+
+
+.node rect {
+  cursor: move;
+  fill-opacity: .9;
+  shape-rendering: crispEdges;
+}
+
+.node text {
+  pointer-events: none;
+  text-shadow: 0 1px 0 #fff;
+}
+
+.link {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .2;
+}
+
+.link:hover {
+  stroke-opacity: .5;
+}
+
+/* OpenAccessPublications Legend Style */
+.my-legend .legend-title {
+  text-align: left;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 90%;
+  }
+.my-legend .legend-scale ul {
+  margin: 0;
+  padding: 0;
+  float: left;
+  list-style: none;
+  }
+.my-legend .legend-scale ul li {
+  display: block;
+  float: left;
+  width: 50px;
+  margin-bottom: 6px;
+  text-align: center;
+  font-size: 80%;
+  list-style: none;
+  }
+.my-legend ul.legend-labels li span {
+  display: block;
+  float: left;
+  height: 15px;
+  width: 50px;
+  }
+
+
+/* OpenAccessSubjects Legend Style */
+
+.my-legend2 .legend-title2 {
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 90%;
+  }
+.my-legend2 .legend-scale2 ul {
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+  float: left;
+  list-style: none;
+  }
+.my-legend2 .legend-scale2 ul li {
+  font-size: 80%;
+  list-style: none;
+  margin-left: 0;
+  line-height: 18px;
+  margin-bottom: 2px;
+  }
+.my-legend2 ul.legend-labels2 li span {
+  display: block;
+  float: left;
+  height: 16px;
+  width: 30px;
+  margin-right: 5px;
+  margin-left: 0;
+  border: 1px solid #999;
+  }
+
+/* navbar style */
+
+
+  .nav-tabs > li > a:hover{
+    background-color: #ff9933 !important;
+      border: medium none;
+      border-radius: 0;
+      color:#fff;
+  }
